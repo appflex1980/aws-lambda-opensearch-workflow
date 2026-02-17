@@ -27,7 +27,18 @@ Scalable AWS serverless architecture built inside a VPC, designed for data inges
 ✔ Easy to extend for other JSON data source
 ```
 
-
+🧱 Create package directory
+```
+mkdir -p package
+# Install dependencies into package directory
+pip install -r requirements.txt -t package/
+# Copy Lambda function code
+cp lambda_function.py package/
+# Create deployment zip
+cd package
+zip -r ../posts_rag2.zip .
+cd ..
+```
 
 🚀 Deployment Options
 ```
