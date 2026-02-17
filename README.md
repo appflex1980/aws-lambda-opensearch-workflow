@@ -40,7 +40,7 @@ pip install -r requirements.txt -t package/
 cp lambda_function.py package/
 # Create deployment zip
 cd package
-zip -r ../posts_rag2.zip .
+zip -r ../function.zip .
 cd ..
 ```
 
