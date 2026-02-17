@@ -18,7 +18,7 @@ Scalable AWS serverless architecture built inside a VPC, designed for data inges
 ```
 
 
-🧱 Features
+👌 Features
 ```
 ✔ Fully automated provisioning with Terraform
 ✔ High availability using multiple subnets in different Availability Zones
@@ -27,8 +27,12 @@ Scalable AWS serverless architecture built inside a VPC, designed for data inges
 ✔ Easy to extend for other JSON data source
 ```
 
-🧱 Create package directory
+🧱 Create Virtual Environment and package directory
 ```
+python3.12 -m venv venv
+source venv/bin/activate  # Linux/macOS
+# venv\Scripts\activate   # Windows
+
 mkdir -p package
 # Install dependencies into package directory
 pip install -r requirements.txt -t package/
